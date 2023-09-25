@@ -17,7 +17,7 @@ public class FacultyService {
 
 
     public Faculty createFaculty(Faculty faculty) {
-        if (/*getAllFaculties().contains(faculty)*/facultyRepository.) {
+        if (facultyRepository.existsById(faculty.getId())) {
             return null;
         }
         return facultyRepository.save(faculty);
